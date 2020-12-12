@@ -1,14 +1,18 @@
 body {
-  background-color: #cad2c5;
+  background-color: #dcdcdc;
 }
 
 .contentBlock {
   height: 25%;
   margin: 20px auto;
   border-radius: 5px;
-  background-color: #52796f;
   padding-top: 5%;
   text-align:  center;
+}
+
+.employeeImg{
+  padding: 10px;
+  border-radius: 2rem;
 }
 
 .mainTitle {
@@ -24,6 +28,19 @@ body {
 .searchInput {
   margin-right: 10px;
   border-radius: 5px;
+}
+
+.form-group {
+  width: 25%;
+  margin: 0 auto;
+  /* background-color: #52796f; */
+  padding: 20px;
+  border-radius: 2rem;
+}
+
+.header {
+  margin: 0 auto;
+  padding: 20px;
 }
 
 /* .employeeCard {

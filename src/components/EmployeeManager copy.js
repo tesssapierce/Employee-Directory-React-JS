@@ -3,7 +3,6 @@ import employees from "../employees.json"
 import EmployeeRows from "./EmployeeRows"
 import Header from "./Header"
 import Search from "./Search"
-import Table from "react-bootstrap/Table"
 
 class EmployeeManager extends React.Component {
 
@@ -60,21 +59,17 @@ class EmployeeManager extends React.Component {
       <div className="container">
         <div className="row">
           <div className="col-10 contentBlock">
-            <Table striped bordered hover>
-              <thead>
-                <tr>
-                  <th>Image</th>
-                  <th onClick={this.sortByAlpha}>Name</th>
-                  <th>Location</th>
-                  <th>Email</th>
-                </tr>
-              </thead>
-              <tbody>
+            <table>
+              <tr>
+                <th>Image</th>
+                <th onClick={this.sortByAlpha}>Name</th>
+                <th>Location</th>
+                <th>Email</th>
+              </tr>
               {this.state.employeesArr.map(employee => (
               <EmployeeRows key={employee.id.value} {...employee} />
             ))}
-            </tbody>
-            </Table> 
+            </table> 
           </div>
         </div>
       </div>

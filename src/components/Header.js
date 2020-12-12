@@ -8,7 +8,7 @@ class Header extends React.Component {
     return (
       <header className="container">
         <div className="row">
-          <div className="col-10 contentBlock">
+          <div className="col-10 header">
             <h2 className="mainTitle">Employee Directory</h2>
           </div>
         </div>
